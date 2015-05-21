@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mortgage.view.MortgageCalculatorController">
+   <children>
+    <AnchorPane layoutX="3.0" layoutY="1.0" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="395.0">
+         <children>
+            <TextField fx:id="Income" layoutX="111.0" layoutY="67.0" AnchorPane.bottomAnchor="306.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="67.0" />
+            <Label layoutX="18.0" layoutY="134.0" text="Interest Rate:" />
+            <Label layoutX="14.0" layoutY="80.0" text="Income:" AnchorPane.bottomAnchor="301.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="302.0" AnchorPane.topAnchor="80.0" />
+            <Label layoutX="15.0" layoutY="104.0" prefHeight="17.0" prefWidth="79.0" text="Monthly Debt:" AnchorPane.bottomAnchor="277.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="301.0" AnchorPane.topAnchor="104.0" />
+            <TextField fx:id="downPayment" layoutX="111.0" layoutY="98.0" AnchorPane.bottomAnchor="213.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="159.0" />
+            <Label layoutX="13.0" layoutY="195.0" prefHeight="17.0" prefWidth="94.0" text="Terms:" AnchorPane.bottomAnchor="186.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="288.0" AnchorPane.topAnchor="195.0" />
+            <ComboBox fx:id="term" layoutX="110.0" layoutY="191.0" prefWidth="150.0" AnchorPane.bottomAnchor="182.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="191.0" />
+            <Label layoutX="14.0" layoutY="163.0" prefHeight="17.0" prefWidth="150.0" text="Down Payment:" />
+            <TextField fx:id="monthlyDebt" layoutX="111.0" layoutY="99.0" prefHeight="26.0" prefWidth="149.0" AnchorPane.bottomAnchor="273.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="99.0" />
+            <Button fx:id="button" layoutX="267.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleCalculate" text="Calculate" AnchorPane.bottomAnchor="182.0" AnchorPane.leftAnchor="267.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="191.0" />
+            <Label layoutX="17.0" layoutY="227.0" prefHeight="17.0" prefWidth="86.0" text="Result:" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="292.0" AnchorPane.topAnchor="227.0" />
+            <TextField fx:id="interestRate" layoutX="111.0" layoutY="130.0" prefHeight="26.0" prefWidth="149.0" AnchorPane.bottomAnchor="242.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="130.0" />
+            <Label layoutX="24.0" layoutY="112.0" />
+            <Label layoutX="131.0" layoutY="34.0" text="Mortgage Calculator" AnchorPane.bottomAnchor="347.0" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="34.0" />
+            <Label layoutX="16.0" layoutY="288.0" prefHeight="17.0" prefWidth="183.0" text="Housing Payment plus Other:" AnchorPane.bottomAnchor="93.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="288.0" />
+            <Label layoutX="15.0" layoutY="314.0" prefHeight="17.0" prefWidth="159.0" text="Maximum Payment:" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="221.0" AnchorPane.topAnchor="314.0" />
+            <Label layoutX="14.0" layoutY="343.0" prefHeight="17.0" prefWidth="149.0" text="Amount Financed: " AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="232.0" AnchorPane.topAnchor="343.0" />
+            <Label layoutX="15.0" layoutY="262.0" prefHeight="17.0" prefWidth="149.0" text="Housing Payment:" AnchorPane.bottomAnchor="119.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="262.0" />
+            <Label fx:id="housingPayment" layoutX="185.0" layoutY="262.0" text="Label" AnchorPane.bottomAnchor="119.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="182.0" AnchorPane.topAnchor="262.0" />
+            <Label fx:id="plusOther" layoutX="184.0" layoutY="288.0" text="Label" AnchorPane.bottomAnchor="93.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="183.0" AnchorPane.topAnchor="288.0" />
+            <Label fx:id="maxPayment" layoutX="184.0" layoutY="314.0" text="Label" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="183.0" AnchorPane.topAnchor="314.0" />
+            <Label fx:id="amountFinanced" layoutX="184.0" layoutY="343.0" text="Label" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="183.0" AnchorPane.topAnchor="343.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
